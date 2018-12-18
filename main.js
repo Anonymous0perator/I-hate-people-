@@ -163,7 +163,7 @@ if (commandIs("creators")) {
 
 if (commandIs("help")) {
   const embed = new Discord.RichEmbed()
-    .setTitle("Commands List for xAtom")
+    .setTitle("Commands List for hexcore-beta")
     .setDescription(`All the commands provided for the release version of xAtom. Default prefix is ${prefix}`)
     .setColor(0x70b080)
     .addField("help", "This help panel")
@@ -175,7 +175,7 @@ if (commandIs("help")) {
     .addField("botstatus" , "bot status from heroku hosting server.")
     .addField("info", "gives you information")
     .addField("membercount", "counts member in the server,")
-    .setFooter("xAtom", client.user.avatarURL)
+    .setFooter("hexcore-beta", client.user.avatarURL)
     .setThumbnail(client.user.avatarURL)
 
   message.channel.send(embed);
