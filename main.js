@@ -147,6 +147,39 @@ if(commandIs("userinfo")){
      message.channel.send(ess.errorHandle(err));
    }
 }
+if (commandIs("creators")) {
+  const embed = new Discord.RichEmbed()
+    .setTitle("Creators of hexcore-beta")
+    .setDescription("People who made bot hexcore-beta successful and become better than anything before.")
+    .setColor(0x70b080)
+    .addField("Creator", "ExternalMixture")
+    .addField("Developers", "ExternalMixture")
+    .addField("GFX Artists", "ExternalMixture")
+    .setFooter("hexcore-beta", client.user.avatarURL)
+    .setThumbnail(client.user.avatarURL)
+
+  message.channel.send(embed);
+}
+
+if (commandIs("help")) {
+  const embed = new Discord.RichEmbed()
+    .setTitle("Commands List for xAtom")
+    .setDescription(`All the commands provided for the release version of xAtom. Default prefix is ${prefix}`)
+    .setColor(0x70b080)
+    .addField("help", "This help panel")
+    .addField("userinfo", "Information about user in the server")
+    .addField("creators", "Credits for the bot")
+    .addField("purge", "Delete a bulk load of messages (100 max)")
+    .addField("buy", "Gives invite to the xAtom main server | Price")
+    .addField("serverinfo", "Gives all of the information of the server")
+    .addField("botstatus" , "bot status from heroku hosting server.")
+    .addField("info", "gives you information")
+    .addField("membercount", "counts member in the server,")
+    .setFooter("xAtom", client.user.avatarURL)
+    .setThumbnail(client.user.avatarURL)
+
+  message.channel.send(embed);
+}
 if(commandIs("botstatus")){
   try {
 
@@ -342,6 +375,8 @@ if (commandIs("purge")) {
 })
 
   // Return if it is a bot
+
+
 
 
 
