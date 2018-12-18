@@ -164,7 +164,7 @@ if (commandIs("creators")) {
 if (commandIs("help")) {
   const embed = new Discord.RichEmbed()
     .setTitle("Commands List for hexcore-beta")
-    .setDescription(`All the commands provided for the release version of xAtom. Default prefix is ${prefix}`)
+    .setDescription(`All the commands provided for the release version of hexcore-beta. Default prefix is ${prefix}`)
     .setColor(0x70b080)
     .addField("help", "This help panel")
     .addField("userinfo", "Information about user in the server")
