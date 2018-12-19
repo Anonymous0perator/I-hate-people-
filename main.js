@@ -41,7 +41,7 @@ client.on('message', message => {
     member.setNickname(`[${member.highestRole.name}] ${member.user.username}`)
       }
 	
-	if(commandIs("activitycheck)){
+	if(commandIs("activitycheck")){
 	message.channel.send("You have **0** players playing your game. (ERROR:1 YOUR GAME HAS NOT BEEN CREATED)")
 		     }
       if(commandIs("donate")){
